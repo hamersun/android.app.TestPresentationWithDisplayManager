@@ -1,0 +1,33 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:background="#0099cc"
+    android:orientation="vertical"
+    tools:context=".PresentationActivity">
+
+    <!-- Message to show to use -->
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/presentation_activity_text"
+        android:id="@+id/text"
+        android:layout_weight="0"
+        android:gravity="center_vertical|center_horizontal"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <!-- a Checkbox to toggle between showing all displays or only presentation displays -->
+    <CheckBox
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/presentation_show_all_displays"
+        android:id="@+id/show_all_displays"
+        android:layout_weight="0" />
+
+    <!-- List that will show information about all connected displays. -->
+    <ListView
+        android:id="@+id/display_list"
+        android:layout_width="match_parent"
+        android:layout_height="0dip"
+        android:layout_weight="1" />
+
+</LinearLayout>
